@@ -72,7 +72,7 @@ export default function Login() {
                   required
                   type="email" 
                   placeholder="name@example.com"
-                  className="w-full pl-12 pr-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                  className="w-full pl-12 pr-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -87,7 +87,7 @@ export default function Login() {
                   required
                   type="password" 
                   placeholder="••••••••"
-                  className="w-full pl-12 pr-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                  className="w-full pl-12 pr-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -109,7 +109,7 @@ export default function Login() {
             </button>
           </form>
 
-          <div className="mt-8 pt-8 border-t border-orange-100 text-center">
+          <div className="mt-8 pt-8 border-t border-purple-100 text-center">
             <p className="text-warm-muted">
               {isLogin ? "Don't have an account?" : "Already have an account?"}
               <button 

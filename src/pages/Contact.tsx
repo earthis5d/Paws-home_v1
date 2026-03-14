@@ -48,7 +48,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-orange-100/60 uppercase tracking-wider mb-1">Email Us</p>
+                    <p className="text-xs font-bold text-purple-100/60 uppercase tracking-wider mb-1">Email Us</p>
                     <p className="text-lg font-bold">hello@pawsandhome.com</p>
                   </div>
                 </li>
@@ -57,7 +57,7 @@ export default function Contact() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-orange-100/60 uppercase tracking-wider mb-1">Call Us</p>
+                    <p className="text-xs font-bold text-purple-100/60 uppercase tracking-wider mb-1">Call Us</p>
                     <p className="text-lg font-bold">(555) 123-4567</p>
                   </div>
                 </li>
@@ -66,14 +66,14 @@ export default function Contact() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-orange-100/60 uppercase tracking-wider mb-1">Visit Us</p>
+                    <p className="text-xs font-bold text-purple-100/60 uppercase tracking-wider mb-1">Visit Us</p>
                     <p className="text-lg font-bold">123 Pet Lane, Animal City</p>
                   </div>
                 </li>
               </ul>
 
               <div className="mt-12 pt-12 border-t border-white/10">
-                <p className="text-orange-100/70 mb-4">Follow our journey:</p>
+                <p className="text-purple-100/70 mb-4">Follow our journey:</p>
                 <div className="flex gap-4">
                   {['Instagram', 'Twitter', 'Facebook'].map(social => (
                     <div key={social} className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all cursor-pointer">
@@ -111,7 +111,7 @@ export default function Contact() {
                         required
                         type="text" 
                         placeholder="John Doe"
-                        className="w-full px-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                        className="w-full px-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       />
@@ -122,7 +122,7 @@ export default function Contact() {
                         required
                         type="email" 
                         placeholder="john@example.com"
-                        className="w-full px-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                        className="w-full px-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       />
@@ -135,7 +135,7 @@ export default function Contact() {
                       required
                       type="text" 
                       placeholder="How can we help?"
-                      className="w-full px-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      className="w-full px-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     />
@@ -147,7 +147,7 @@ export default function Contact() {
                       required
                       rows={6}
                       placeholder="Tell us more..."
-                      className="w-full px-4 py-4 bg-warm-bg border border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none"
+                      className="w-full px-4 py-4 bg-warm-bg border border-purple-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     />

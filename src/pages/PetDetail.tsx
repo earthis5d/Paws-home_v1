@@ -166,7 +166,7 @@ export default function PetDetail({ user }: PetDetailProps) {
           >
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-orange-100 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
+                <span className="bg-purple-100 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
                   {pet.species}
                 </span>
                 <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
@@ -184,7 +184,7 @@ export default function PetDetail({ user }: PetDetailProps) {
                 { label: 'Size', value: pet.size, icon: Info },
                 { label: 'Location', value: 'Animal City', icon: MapPin }
               ].map((item, i) => (
-                <div key={i} className="bg-white p-4 rounded-2xl border border-orange-100 shadow-sm text-center">
+                <div key={i} className="bg-white p-4 rounded-2xl border border-purple-100 shadow-sm text-center">
                   <item.icon className="w-5 h-5 text-primary mx-auto mb-2" />
                   <p className="text-xs text-warm-muted/60 font-bold uppercase tracking-tighter mb-1">{item.label}</p>
                   <p className="font-bold text-warm-text">{item.value}</p>
@@ -199,7 +199,7 @@ export default function PetDetail({ user }: PetDetailProps) {
               </p>
             </div>
 
-            <div className="glass-card p-8 bg-orange-50/50">
+            <div className="glass-card p-8 bg-purple-50/50">
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <HomeIcon className="w-6 h-6 text-primary" />
                 Shelter Information

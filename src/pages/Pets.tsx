@@ -95,7 +95,7 @@ export default function Pets() {
                     <input 
                       type="text" 
                       placeholder="Search..."
-                      className="w-full pl-10 pr-4 py-3 bg-warm-bg border border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      className="w-full pl-10 pr-4 py-3 bg-warm-bg border border-purple-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                       value={filters.search}
                       onChange={(e) => setFilters({ ...filters, search: e.target.value })}
                     />
@@ -112,7 +112,7 @@ export default function Pets() {
                         className={`w-full text-left px-4 py-3 rounded-xl transition-all ${
                           filters.species === s 
                           ? 'bg-primary text-white shadow-md' 
-                          : 'bg-warm-bg text-warm-text hover:bg-orange-50 border border-orange-100'
+                          : 'bg-warm-bg text-warm-text hover:bg-purple-50 border border-purple-100'
                         }`}
                       >
                         {s}s
@@ -124,7 +124,7 @@ export default function Pets() {
                 <div>
                   <label className="block text-sm font-bold text-warm-muted uppercase tracking-wider mb-3">Size</label>
                   <select 
-                    className="w-full px-4 py-3 bg-warm-bg border border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                    className="w-full px-4 py-3 bg-warm-bg border border-purple-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                     value={filters.size}
                     onChange={(e) => setFilters({ ...filters, size: e.target.value })}
                   >
@@ -161,7 +161,7 @@ export default function Pets() {
               </div>
             ) : (
               <div className="text-center py-20 glass-card">
-                <div className="bg-orange-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="bg-purple-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Search className="w-10 h-10 text-primary/30" />
                 </div>
                 <h3 className="text-2xl font-display font-bold text-warm-text mb-2">No pets found</h3>

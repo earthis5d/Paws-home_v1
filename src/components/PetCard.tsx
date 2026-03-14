@@ -31,7 +31,7 @@ export default function PetCard({ pet }: PetCardProps) {
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-display font-bold text-warm-text">{pet.name}</h3>
-          <span className="bg-orange-100 text-primary text-xs font-bold px-2 py-1 rounded-md uppercase tracking-wider">
+          <span className="bg-purple-100 text-primary text-xs font-bold px-2 py-1 rounded-md uppercase tracking-wider">
             {pet.age || 'Young'}
           </span>
         </div>

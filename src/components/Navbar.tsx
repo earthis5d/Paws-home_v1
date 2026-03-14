@@ -15,7 +15,7 @@ export default function Navbar({ user }: NavbarProps) {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100">
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center gap-2 group">
@@ -32,7 +32,7 @@ export default function Navbar({ user }: NavbarProps) {
             <Link to="/contact" className="text-warm-text hover:text-primary font-medium transition-colors">Contact</Link>
             
             {user ? (
-              <div className="flex items-center gap-4 pl-4 border-l border-orange-100">
+              <div className="flex items-center gap-4 pl-4 border-l border-purple-100">
                 <span className="text-sm text-warm-muted hidden lg:block">Hello, {user.email?.split('@')[0]}</span>
                 <button onClick={handleLogout} className="flex items-center gap-2 text-warm-muted hover:text-red-500 transition-colors">
                   <LogOut className="w-5 h-5" />
@@ -58,11 +58,11 @@ export default function Navbar({ user }: NavbarProps) {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-orange-100 animate-in slide-in-from-top duration-200">
+        <div className="md:hidden bg-white border-b border-purple-100 animate-in slide-in-from-top duration-200">
           <div className="px-4 pt-2 pb-6 space-y-2">
-            <Link to="/" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-orange-50 rounded-lg">Home</Link>
-            <Link to="/pets" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-orange-50 rounded-lg">Browse Pets</Link>
-            <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-orange-50 rounded-lg">Contact</Link>
+            <Link to="/" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-purple-50 rounded-lg">Home</Link>
+            <Link to="/pets" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-purple-50 rounded-lg">Browse Pets</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-warm-text hover:bg-purple-50 rounded-lg">Contact</Link>
             {user ? (
               <button onClick={() => { handleLogout(); setIsOpen(false); }} className="w-full text-left px-3 py-2 text-red-500 hover:bg-red-50 rounded-lg">Logout</button>
             ) : (

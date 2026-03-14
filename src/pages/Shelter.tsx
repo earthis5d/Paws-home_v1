@@ -190,7 +190,7 @@ export default function Shelter() {
               animate={{ opacity: 1, y: 0 }}
             >
               <h1 className="text-4xl md:text-6xl font-display font-black text-white mb-4">{shelter.name}</h1>
-              <div className="flex flex-wrap gap-6 text-orange-100/90 font-medium">
+              <div className="flex flex-wrap gap-6 text-purple-100/90 font-medium">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-primary" />
                   <span>{shelter.address}</span>
@@ -216,7 +216,7 @@ export default function Shelter() {
               </h3>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
-                  <div className="bg-orange-50 p-3 rounded-xl">
+                  <div className="bg-purple-50 p-3 rounded-xl">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
@@ -225,7 +225,7 @@ export default function Shelter() {
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <div className="bg-orange-50 p-3 rounded-xl">
+                  <div className="bg-purple-50 p-3 rounded-xl">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
@@ -234,7 +234,7 @@ export default function Shelter() {
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <div className="bg-orange-50 p-3 rounded-xl">
+                  <div className="bg-purple-50 p-3 rounded-xl">
                     <Globe className="w-5 h-5 text-primary" />
                   </div>
                   <div>
@@ -249,10 +249,10 @@ export default function Shelter() {
 
             <div className="bg-primary p-8 rounded-[2rem] text-white shadow-lg shadow-primary/20">
               <h3 className="text-xl font-bold mb-4">Support This Shelter</h3>
-              <p className="text-orange-50 mb-6 leading-relaxed">
+              <p className="text-purple-50 mb-6 leading-relaxed">
                 Your donations help us provide food, medical care, and shelter for animals in need.
               </p>
-              <button className="w-full bg-white text-primary font-bold py-4 rounded-2xl hover:bg-orange-50 transition-colors">
+              <button className="w-full bg-white text-primary font-bold py-4 rounded-2xl hover:bg-purple-50 transition-colors">
                 Donate Now
               </button>
             </div>
@@ -297,7 +297,7 @@ export default function Shelter() {
                     <div className="glass-card p-8 relative">
                       <button 
                         onClick={() => setShowAddForm(false)}
-                        className="absolute top-6 right-6 p-2 hover:bg-orange-50 rounded-xl transition-colors"
+                        className="absolute top-6 right-6 p-2 hover:bg-purple-50 rounded-xl transition-colors"
                       >
                         <X className="w-6 h-6 text-warm-muted" />
                       </button>
@@ -329,7 +329,7 @@ export default function Shelter() {
                                 required
                                 value={newPet.name}
                                 onChange={(e) => setNewPet({...newPet, name: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                                 placeholder="e.g. Buddy"
                               />
                             </div>
@@ -338,7 +338,7 @@ export default function Shelter() {
                               <select 
                                 value={newPet.species}
                                 onChange={(e) => setNewPet({...newPet, species: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                               >
                                 <option>Dog</option>
                                 <option>Cat</option>
@@ -353,7 +353,7 @@ export default function Shelter() {
                                 required
                                 value={newPet.breed}
                                 onChange={(e) => setNewPet({...newPet, breed: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                                 placeholder="e.g. Golden Retriever"
                               />
                             </div>
@@ -364,7 +364,7 @@ export default function Shelter() {
                                 required
                                 value={newPet.age}
                                 onChange={(e) => setNewPet({...newPet, age: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                                 placeholder="e.g. 2 years"
                               />
                             </div>
@@ -373,7 +373,7 @@ export default function Shelter() {
                               <select 
                                 value={newPet.size}
                                 onChange={(e) => setNewPet({...newPet, size: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                               >
                                 <option>Small</option>
                                 <option>Medium</option>
@@ -386,7 +386,7 @@ export default function Shelter() {
                               <select 
                                 value={newPet.gender}
                                 onChange={(e) => setNewPet({...newPet, gender: e.target.value})}
-                                className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
                               >
                                 <option>Male</option>
                                 <option>Female</option>
@@ -401,7 +401,7 @@ export default function Shelter() {
                               rows={4}
                               value={newPet.description}
                               onChange={(e) => setNewPet({...newPet, description: e.target.value})}
-                              className="w-full px-5 py-4 bg-white border border-orange-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"
+                              className="w-full px-5 py-4 bg-white border border-purple-100 rounded-2xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"
                               placeholder="Tell us about this pet's personality..."
                             />
                           </div>
@@ -415,8 +415,8 @@ export default function Shelter() {
                                 onChange={handleFileChange}
                                 className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                               />
-                              <div className={`w-full px-5 py-8 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center gap-3 transition-all ${photoFile ? 'border-primary bg-orange-50' : 'border-orange-100 hover:border-primary/50'}`}>
-                                <div className={`p-3 rounded-xl ${photoFile ? 'bg-primary text-white' : 'bg-orange-50 text-primary'}`}>
+                              <div className={`w-full px-5 py-8 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center gap-3 transition-all ${photoFile ? 'border-primary bg-purple-50' : 'border-purple-100 hover:border-primary/50'}`}>
+                                <div className={`p-3 rounded-xl ${photoFile ? 'bg-primary text-white' : 'bg-purple-50 text-primary'}`}>
                                   <Upload className="w-6 h-6" />
                                 </div>
                                 <div className="text-center">

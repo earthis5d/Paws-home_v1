@@ -50,7 +50,7 @@ export default function Home() {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 px-4 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-orange-100/50 via-transparent to-transparent -z-10" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-100/50 via-transparent to-transparent -z-10" />
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div 
@@ -58,7 +58,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 bg-orange-100 text-primary px-4 py-2 rounded-full text-sm font-bold mb-6">
+            <div className="inline-flex items-center gap-2 bg-purple-100 text-primary px-4 py-2 rounded-full text-sm font-bold mb-6">
               <Sparkles className="w-4 h-4" />
               <span>Over 500+ pets found homes this month</span>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
             {/* Decorative elements */}
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary rounded-full -z-10 blur-3xl opacity-20" />
-            <div className="absolute -top-10 -right-10 w-60 h-60 bg-orange-300 rounded-full -z-10 blur-3xl opacity-20" />
+            <div className="absolute -top-10 -right-10 w-60 h-60 bg-purple-300 rounded-full -z-10 blur-3xl opacity-20" />
           </motion.div>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function Home() {
               { label: 'Partner Shelters', value: stats.totalShelters || 45, icon: HomeIcon },
               { label: 'Happy Adoptions', value: stats.totalAdoptions || 850, icon: Heart }
             ].map((stat, i) => (
-              <div key={i} className="bg-orange-50/50 p-8 rounded-[2rem] flex items-center gap-6 border border-orange-100">
+              <div key={i} className="bg-purple-50/50 p-8 rounded-[2rem] flex items-center gap-6 border border-purple-100">
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
                   <stat.icon className="w-8 h-8 text-primary" />
                 </div>
@@ -135,7 +135,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {loading ? (
               [1, 2, 3, 4].map(i => (
-                <div key={i} className="h-96 bg-orange-50 rounded-2xl animate-pulse" />
+                <div key={i} className="h-96 bg-purple-50 rounded-2xl animate-pulse" />
               ))
             ) : (
               featuredPets.map((pet, index) => (
@@ -184,12 +184,12 @@ export default function Home() {
       <section className="py-24 px-4">
         <div className="max-w-5xl mx-auto bg-warm-text rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-32 -mt-32" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-400/10 rounded-full blur-3xl -ml-32 -mb-32" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl -ml-32 -mb-32" />
           
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8 relative z-10">
             Ready to change a life?
           </h2>
-          <p className="text-orange-100/70 text-xl mb-12 max-w-xl mx-auto relative z-10">
+          <p className="text-purple-100/70 text-xl mb-12 max-w-xl mx-auto relative z-10">
             Join thousands of happy families who found their best friends through Paws & Home.
           </p>
           <Link to="/pets" className="btn-primary text-lg px-12 py-4 relative z-10">
